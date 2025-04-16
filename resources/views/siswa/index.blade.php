@@ -28,7 +28,6 @@
                             </tr>
                         </thead>
                         <tbody>
-                            @if(request('nisn')) 
                             @foreach ($siswa as $sis)
                                 <tr>
                                     <td class="py-2 px-4 border-b">{{ $loop->iteration }}</td>
@@ -50,7 +49,6 @@
                                     </td>
                                 </tr>
                             @endforeach
-                            @endif
                         </tbody>
                     </table>
                     {{ $siswa->links() }}
